@@ -19,7 +19,7 @@ pipeline{
         stage("Clone-Code"){
             steps{
                 cleanWs()
-                checkout scmGit(branches: [[name: "${COMMIT_ID}"]], extensions: [], userRemoteConfigs: [[url: 'https://github.com/singhritesh85/Java_Gradle_Responsive_Website.git']])
+                checkout scmGit(branches: [[name: "${COMMIT_ID}"]], extensions: [], userRemoteConfigs: [[url: 'https://github.com/kamalmohan217/Java_Gradle_Responsive_Website.git']])
             }
         }
         stage("SonarQube-Analysis"){
@@ -62,7 +62,7 @@ pipeline{
             steps{
                 //sh 'yes|argocd login argocd.singhritesh85.com --username admin --password Admin123'
                 sh 'argocd login argocd.singhritesh85.com --username admin --password Admin123 --skip-test-tls  --grpc-web'
-                sh 'argocd app create responsive-website --project default --repo https://github.com/singhritesh85/helm-repo-for-ArgoCD.git --path ./folo --dest-namespace responsive-website --dest-server https://kubernetes.default.svc --helm-set service.port=80 --helm-set image.repository=${REPO_NAME} --helm-set image.tag=${TAG_NAME} --helm-set replicaCount=${REPLICA_COUNT} --upsert'
+                sh 'argocd app create responsive-website --project default --repo https://github.com/kamalmohan217/helm-repo-for-ArgoCD.git --path ./folo --dest-namespace responsive-website --dest-server https://kubernetes.default.svc --helm-set service.port=80 --helm-set image.repository=${REPO_NAME} --helm-set image.tag=${TAG_NAME} --helm-set replicaCount=${REPLICA_COUNT} --upsert'
                 sh 'argocd app sync responsive-website'
             }
         }
