@@ -34,7 +34,24 @@ Finally access the Responsive Website as shown in the screeshot attached below.
 
 ![image](https://github.com/user-attachments/assets/00e9addf-3fe0-4cdf-a2e8-1fa698284482)
 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+```
+Source Code:-  https://github.com/kamalmohan217/Java_Gradle_Responsive_Website.git
 
-
-
+Helm Chart:-   https://github.com/kamalmohan217/helm-repo-for-ArgoCD.git 
+```
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+```
+Reference:-   https://github.com/Krishnamohan-Yerrabilli/Java_Gradle_Responsive_Website.git
+```
 
