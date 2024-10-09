@@ -2,7 +2,7 @@
 
 Architecture diagram of the project is as shown in the screenshot attached below.
 
-![image](https://github.com/user-attachments/assets/d20d27e1-6f9f-48f9-b57c-0031cbd176b3)
+![image](https://github.com/user-attachments/assets/9b284f5b-d317-433a-95c1-8ee98a497b60)
 
 Install SonarQube Scanner Plugin in Jenkins as shown in the Screenshot attached below.
 
